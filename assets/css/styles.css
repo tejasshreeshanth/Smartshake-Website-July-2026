@@ -475,7 +475,7 @@ body.c-hover .c-ring {
   width: auto;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.65;
+  opacity: 0.85;
   transform: none;
   backface-visibility: visible;
   will-change: auto;

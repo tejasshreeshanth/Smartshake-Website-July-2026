@@ -118,7 +118,7 @@ function switchTab(type) {
   });
 })();
 
-/* â”€â”€ MAP â”€â”€ */
+/* MAP */
 /* Set MAP_LIVE = true and fill LOCATIONS when real machines are deployed.
      To add a location: copy the LOCATIONS entry pattern and add a matching
      .location-card in the HTML with onclick="focusLocation(<index>)".       */
@@ -130,11 +130,11 @@ var LOCATIONS = [
   {
     lat: 13.0827,
     lng: 80.2707,
-    name: "Chennai â€” Pilot Gym",
+    name: "Chennai Pilot Gym",
     addr: "Chennai, Tamil Nadu, India",
     badge: "HQ / Pilot",
   },
-  /* â”€â”€ ADD LOCATIONS HERE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  /*  ADD LOCATIONS HERE
     ,{
       lat: 0.0000,
       lng: 0.0000,
@@ -142,7 +142,7 @@ var LOCATIONS = [
       addr: 'Full address',
       badge: 'Live'
     }
-    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+   */
 ];
 
 function initMap() {
@@ -225,7 +225,7 @@ function focusLocation(idx) {
   });
 }
 
-/* CTA form â€” Formspree delivery to smartshakevending@gmail.com */
+/* CTA form Formspree delivery to smartshakevending@gmail.com */
 document
   .getElementById("ctaForm")
   .addEventListener("submit", async function (e) {
@@ -262,7 +262,7 @@ document
       return;
     }
     const orig = btn.textContent;
-    btn.textContent = "Sendingâ€¦";
+    btn.textContent = "Sending";
     btn.disabled = true;
     try {
       const res = await fetch("https://formspree.io/f/xojyzble", {
@@ -277,7 +277,7 @@ document
           phone: phoneInp.value.trim(),
           city: cityInp.value.trim(),
           description: descInp.value.trim(),
-          _subject: "Early Access Request â€” Smartshake Vending",
+          _subject: "Early Access Request - Smartshake Vending",
           _replyto: emailInp.value,
         }),
       });

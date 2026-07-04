@@ -1061,6 +1061,12 @@ body.c-hover .c-ring {
   gap: 5rem;
   align-items: center;
 }
+.tab-list-wrap{
+  width:100%;
+}
+.dashboard{
+  padding: 1rem;
+}
 .tab-list {
   list-style: none;
   display: flex;

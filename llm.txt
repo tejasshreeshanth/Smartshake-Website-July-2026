@@ -1,0 +1,60 @@
+# Smartshake Vending
+
+> Smartshake Vending LLP is a Chennai-based **manufacturer** of India's first smart protein shake vending machine (SSVM) for gyms and fitness centres. The company **designs, builds, sells, and installs** machines that dispense fresh whey and plant-based protein shakes in under 60 seconds, with cashless UPI payment, a hygienic sealed self-cleaning system, and IoT remote monitoring. Founded in 2025 and backed by an NTU Singapore grant (August 2025), Smartshake is launching June 2026 in Chennai and beyond.
+
+Smartshake is a **hardware manufacturer. The company sells and installs the machines; the gym owner or operator owns and runs the machine day-to-day (stocking powder, setting prices, collecting revenue). Smartshake provides installation, warranty, and optional maintenance support. The machines are compatible with all supplement powders (whey, plant-based, mass gainers, creatine, pre-workout, BCAA, and more).
+
+## Key facts
+- *Company:* Smartshake Vending LLP
+- *Business model:* Machine manufacturing, sales, and installation (not operation)
+- *Location:* Chennai, Tamil Nadu, India
+- *Founder & CEO:* Tejas
+- *Founded:* 2025
+- *Backing:* NTU Singapore grant (August 2025)
+- *Launch:* June 2026 (Chennai, then wider India)
+- *Flagship product:* SSVM001 protein shake vending machine
+- *Availability:* Pre-order / early access
+- *Website:* https://www.smartshakevending.com
+
+## Product: SSVM001
+The flagship machine, aimed at commercial and large gyms. Key specifications:
+- Dispense time: under 60 seconds
+- Powder compatibility: all supplement powders (whey, plant-based, mass gainers, creatine, pre-workout, BCAA)
+- Flavours: Chocolate, Vanilla, Banana, Strawberry, Coffee, Vegan
+- Base options: milk, water, or cold water
+- Payment: UPI / QR (all UPI apps)
+- Cleaning: automatic clean-in-place (CiP) auto-flush after every use
+- Display: 16" touchscreen
+- Dimensions: 170 × 70 × 70 cm
+- Power: 230V AC / 50Hz
+- Flavour slots: 5 independent hoppers
+- Cups: disposable
+- Connectivity: Wi-Fi, with live remote monitoring dashboard
+- Installation: plug & play — Smartshake handles setup and installation
+- Warranty: 1 year; free installation, technical support, AMC available
+
+## How it works
+1. Pick a flavour on the touchscreen.
+2. Select a base (milk, water, or cold water).
+3. Pay via any UPI app (contactless).
+4. Grab and go — shake ready in under 60 seconds.
+
+## Who it's for
+Smartshake sells machines to buyers who want to own and operate them:
+- *Gym owners & operators:* purchase a machine to offer members a premium amenity and run it as their own revenue stream, with real-time sales analytics via the remote dashboard.
+- *Entrepreneurs & wellness businesses:* buy and place machines in high-footfall locations.
+
+End users (gym members and the public) get affordable, hygienic, freshly made protein on demand, with whey and vegan options and multiple flavours.
+
+Suitable locations include commercial gyms, sports academies, corporate fitness centres, hotel and resort gyms, university campus gyms, CrossFit/functional fitness boxes, and (beyond the gym) corporate offices, cafes and food courts, and public spaces such as metros and airports.
+
+## Pages
+- [Home](https://www.smartshakevending.com/): Overview, features, use cases, how it works, company story, locations, and enquiry form.
+- [Models](https://www.smartshakevending.com/models.html): Full details and technical specifications for the SSVM001 machine.
+
+## Contact
+- Sales email: sales@smartshakevending.com
+- Phone: +91 98407 04829
+- Working hours: Monday–Saturday, 9:00 AM – 7:00 PM IST
+- Instagram: https://www.instagram.com/smartshakevending
+- LinkedIn (founder): https://www.linkedin.com/in/tejas-shreeshanth237/

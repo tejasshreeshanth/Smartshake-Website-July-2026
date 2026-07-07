@@ -264,33 +264,44 @@ document
     const orig = btn.textContent;
     btn.textContent = "Sending";
     btn.disabled = true;
+
+    // --- Google Forms config: replace these with your own ---
+    const GOOGLE_FORM_ACTION_URL =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdYluQOIlMMBtzaWR3gOQY2mG4RqNG15AbX_DI8xoDM1Fmq8g/formResponse";
+    const ENTRY_IDS = {
+      name: "entry.2095650914",
+      email: "entry.737276005",
+      phone: "entry.1384059881",
+      city: "entry.899611248",
+      description: "entry.1278971034",
+    };
+    // ----------------------------------------------------------
+
     try {
-      const res = await fetch("https://formspree.io/f/xojyzble", {
+      const formData = new URLSearchParams();
+      formData.append(ENTRY_IDS.name, nameInp.value.trim());
+      formData.append(ENTRY_IDS.email, emailInp.value.trim());
+      formData.append(ENTRY_IDS.phone, phoneInp.value.trim());
+      formData.append(ENTRY_IDS.city, cityInp.value.trim());
+      formData.append(ENTRY_IDS.description, descInp.value.trim());
+
+      await fetch(GOOGLE_FORM_ACTION_URL, {
         method: "POST",
+        mode: "no-cors", // Google Forms doesn't return a readable response
         headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify({
-          name: nameInp.value.trim(),
-          email: emailInp.value,
-          phone: phoneInp.value.trim(),
-          city: cityInp.value.trim(),
-          description: descInp.value.trim(),
-          _subject: "Early Access Request - Smartshake Vending",
-          _replyto: emailInp.value,
-        }),
+        body: formData.toString(),
       });
-      if (res.ok) {
-        btn.textContent = "You're on the list!";
-        btn.style.cssText =
-          "background:var(--lime);color:var(--dark);pointer-events:none";
-        [nameInp, emailInp, phoneInp, cityInp, descInp].forEach(
-          (el) => (el.value = ""),
-        );
-      } else {
-        throw new Error("server");
-      }
+
+      // With no-cors we can't read res.ok/status, so if fetch didn't throw,
+      // we treat it as success (this is the standard pattern for Forms).
+      btn.textContent = "You're on the list!";
+      btn.style.cssText =
+        "background:var(--lime);color:var(--dark);pointer-events:none";
+      [nameInp, emailInp, phoneInp, cityInp, descInp].forEach(
+        (el) => (el.value = ""),
+      );
     } catch {
       btn.textContent = "Try again";
       btn.disabled = false;
@@ -303,7 +314,7 @@ document
     }
   });
 
-  (function () {
+(function () {
   const hero = document.querySelector('.hero');
   if (!hero) return;
   const blobs = hero.querySelectorAll('.blob');
@@ -318,7 +329,7 @@ document
 /* Low-power device detection */
 (function () {
   const isLowEnd =
-    (navigator.deviceMemory && navigator.deviceMemory <= 8) ||
+    (navigator.deviceMemory && navigator.deviceMemory <= 4) ||
     (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4);
   if (isLowEnd) {
     document.documentElement.classList.add("low-power");
